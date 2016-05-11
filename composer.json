@@ -3,7 +3,7 @@
     "type": "typo3-cms-extension",
     "autoload": {
         "psr-4": {
-            "Smichaelsen\\ShortcurParams\\": "Classes/"
+            "Smichaelsen\\ShortcutParams\\": "Classes/"
         }
     }
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2015-09-18T07:05:39Z">
+        <header>
+            <generator>LFEditor</generator>
+        </header>
+        <body>
+            <trans-unit id="pages.tx_shortcutparams_parameters">
+                <source>Additional Parameters</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
