@@ -44,6 +44,19 @@ class TypoScriptFrontendController extends \TYPO3\CMS\Frontend\Controller\TypoSc
      */
     protected function addAdditionalParamsToShortcutTypolink($typolinkParameters)
     {
+        if (isset($this->originalShortcutPage['tx_shortcutparams_parameters'])) {
+            list($additionalParams, $section) = explode('#', $this->originalShortcutPage['tx_shortcutparams_parameters'], 2);
+            if (!empty($additionalParams)) {
+                if ($additionalParams[0] !== '&') {
+                    $additionalParams = '&' . $additionalParams;
+                }
+                $typolinkParameters['additionalParameters'] = $additionalParams;
+            }
+            if (!empty($section)) {
+                $typolinkParameters['parameter'] .= '#' . $section;
+            }
+        }
+        return $typolinkParameters;
     }
 
 }
