@@ -50,7 +50,7 @@ class TypoScriptFrontendController extends \TYPO3\CMS\Frontend\Controller\TypoSc
                 if ($additionalParams[0] !== '&') {
                     $additionalParams = '&' . $additionalParams;
                 }
-                $typolinkParameters['additionalParameters'] = $additionalParams;
+                $typolinkParameters['additionalParams'] = $additionalParams;
             }
             if (!empty($section)) {
                 $typolinkParameters['parameter'] .= '#' . $section;
